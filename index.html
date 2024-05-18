@@ -1,0 +1,352 @@
+<html>
+     <head> 
+	 
+	  <!-- Latest compiled and minified CSS -->
+   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+			
+<style>
+			
+			
+.cartContainer{
+border:1px solid grey;
+border-radius:5px;
+width:80%;
+}			    
+				
+.item{
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid grey;
+height:6%;
+}
+@media only screen and (max-width: 600px) {
+  .item {
+    height:10%;
+  }
+}
+
+
+.item .heading{
+display:block;
+font-weight:bold;
+
+}				
+
+.item div{
+padding:20px;
+}
+	
+.mid{
+margin-top:50px;
+padding-bottom:100px;
+}	
+.blues{
+width:80%;
+}	
+
+.blues h4{
+color:blue;
+font-weight:bold;
+}	
+.blues h5{
+border-radius:15px;
+width:35px;
+height:30px;
+background-color:blue;
+color:white;
+font-weight:bold;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+.bod{
+border:1px solid gray;
+width:80%;
+margin-top:10px;
+padding:10px;
+}
+	
+	</style>
+	 </head>
+	 
+<body>
+	 
+	 
+	 <!--heading section start -->
+<div class="container pl-3 pr-3">
+
+ <img class="d-block mx-auto mt-5" src="bootstrap-logo.svg" width="72px" height="57px" />
+ 
+ <h2 class="text-center mt-4">Checkout form</h2>
+
+
+<p class="text-center text-Secondary" style="font-size:19px;">Below is an example form built entirely with Bootstrap’s form
+ controls. Each required form group has a validation<br> state that can be triggered by attempting to submit the form without completing it.</p>
+
+</div>
+
+	 <!--heading section end -->
+
+
+	 <!--middle  section start -->
+
+<div class="container mid">
+
+<div class="row">
+
+<div class="col-md-1">
+</div>
+
+<div class="col-md-7">  
+    <div>
+	
+	<h3>Billing address</h3>
+	
+	<form>
+    <div class="row">
+      <div class="col">
+	  <h6>First name</h6>
+        <input type="text" class="form-control" placeholder="Enter email" name="email">
+      </div>
+      <div class="col">
+	   <h6>Last name</h6>
+        <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+      </div>
+    </div>
+	
+	<h6 class="mt-3">Username</h6>
+  <div class="input-group">
+    <span class="input-group-text">@</span>
+    <input type="text" class="form-control" placeholder="Username">
+  </div>
+
+<h6 class="mt-3">Email (Optional)</h6>
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="you@example.com">
+  </div>
+  
+  	<h6 class="mt-3">Address</h6>
+    <input type="text" class="form-control" placeholder="1234 Main St"/>
+
+<h6 class="mt-3">Address 2 (Optional)</h6>
+    <input type="text" class="form-control" placeholder="Apartment or suite"/>
+
+<div class="row">
+<div class="col-5">
+<h6 class="mt-3">Country</h6>
+<div class="dropdown">
+  <button type="button" class="btn btn-white dropdown-toggle" data-bs-toggle="dropdown" style="width:90%; border:1px solid gray;">
+    Choose....
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Choose</a></li>
+    <li><a class="dropdown-item" href="#">India</a></li>
+    <li><a class="dropdown-item" href="#">United State</a></li>
+  </ul>
+</div>
+</div>
+
+<div class="col-4">
+<h6 class="mt-3">State</h6>
+<div class="dropdown input-group">
+  <button type="button" class="btn btn-white dropdown-toggle" data-bs-toggle="dropdown" style="width:90%; border:1px solid gray;">
+    Choose....
+  </button>
+  <ul class="dropdown-menu form-control" >
+    <li><a class="dropdown-item" href="#">Choose</a></li>
+    <li><a class="dropdown-item" href="#">California</a></li>
+    <li><a class="dropdown-item" href="#">United State</a></li>
+  </ul>
+</div>
+</div>
+
+<div class="col-3">
+<h6 class="mt-3">Zip</h6>
+<input type="text" class="form-control" />
+</div>
+
+</div>
+
+
+<div class="mt-5 p-3" style="border-bottom:1px solid gray; border-top:1px solid gray;">
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+  <label class="form-check-label">Shipping address is the same as my billing address</label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+  <label class="form-check-label">Save this information for next time</label>
+</div>
+
+
+</div>
+
+
+<div>
+
+<h4 class="mt-3 mb-3">Payment</h4>
+
+<div class="form-check">
+  <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Credit card
+  <label class="form-check-label" for="radio1"></label>
+</div>
+<div class="form-check">
+  <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Debit card
+  <label class="form-check-label" for="radio2"></label>
+</div>
+<div class="form-check">
+  <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">PayPal
+  <label class="form-check-label"></label>
+</div>
+
+
+</div>
+
+
+<div class="row mt-3">
+<div class="col">
+	  <h6>Name on card</h6>
+        <input type="text" class="form-control" />
+		<p style="font-size:13px;">Full name as displayed on card</p>
+      </div>
+      <div class="col">
+	   <h6>Credit card number</h6>
+        <input type="password" class="form-control"/>
+      </div>  
+</div>
+
+
+
+<div class="row mt-3 pb-4" style="border-bottom:1px solid gray;">
+<div class="col-3">
+	  <h6>Expiration</h6>
+        <input type="text" class="form-control" />
+      </div>
+      <div class="col-3">
+	   <h6>CVV</h6>
+        <input type="password" class="form-control"/>
+      </div>  
+</div>
+
+
+ <button type="password" class="form-control bg-primary mt-3 mb-3 text-white"
+ style="font-size:20px;">
+ Continue to checkuot
+ </button>
+
+  </form>
+  
+	
+    </div>
+</div>
+
+
+<!--table section start-->
+
+<div class="col-md-4">
+
+<div class="d-flex justify-content-between mb-3 blues">
+<h4>Your cart</h4>
+<h5>3</h5>
+</div>
+
+
+<div class="cartContainer">
+
+
+	<div class="item">
+		<div>
+		<span class="heading">Product name</span>
+		Brief description 
+		</div>
+		
+		<div>
+		$8
+		</div>
+	</div>
+	
+	
+	<div class="item">
+		<div>
+		<span class="heading">Second product</span>
+		Brief description
+		</div>
+		
+		<div>
+		$5
+		</div>
+	</div>
+	
+	
+	<div class="item">
+		<div>
+		<span class="heading">Third item</span>
+		Brief description
+
+		</div>
+		
+		<div>
+		−$5
+		</div>
+	</div>
+	
+	
+	<div class="item">
+		<div class="text-success">
+		<span class="heading">Promo code</span>
+		EXAMPLECODE
+		</div>
+		
+		<div class="text-success">
+		$20
+		</div>
+	</div>
+
+
+	<div class="item">
+		<div>
+		<span class="heading" style="">Total (USD)</span>
+		</div>
+		
+		<div style="font-weight:bold;">
+		$20
+		</div>
+	</div>
+
+
+</div>
+
+
+
+<div class="bod">
+<div class="input-group ">
+    <input type="text" class="form-control" placeholder="Promo code">
+    <button class="btn btn-Secondary" type="submit">Redeem</button> 
+  </div>
+</div>
+
+
+<!--table section end-->
+
+</div>
+
+</div>
+
+</div>
+
+
+	 <!--middle section end -->
+
+
+
+
+
+     </body>
+
+</html>
